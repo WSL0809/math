@@ -11,6 +11,14 @@ public class Employee {
 
     public Employee(){
         System.out.println("mo_ren");
+
+    }
+    public Employee(Integer eno,String ename,Float salary,String dname){
+        this.eno = eno;
+        this.dname = dname;
+        this.ename = ename;
+        this.salary = salary;
+        System.out.println("dai-can-gou-zao");
     }
     public Integer getEno() {
         return eno;
@@ -18,6 +26,16 @@ public class Employee {
 
     public void setEno(Integer eno) {
         this.eno = eno;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "eno=" + eno +
+                ", ename='" + ename + '\'' +
+                ", salary=" + salary +
+                ", dname='" + dname + '\'' +
+                '}';
     }
 
     public String getEname() {
@@ -43,4 +61,5 @@ public class Employee {
     public void setDname(String dname) {
         this.dname = dname;
     }
+
 }
