@@ -45,7 +45,7 @@ public class ReflectSample {
         int b = scanner.nextInt();
         MathOperation mathOperation = null;
         try {
-            mathOperation = (MathOperation) Class.forName("com.imooc.reflect." + op).newInstance();
+             mathOperation = (MathOperation) Class.forName("com.imooc.reflect." + op).newInstance();
         }catch(Exception e){
             System.out.println("无效的计算类");
             return;
